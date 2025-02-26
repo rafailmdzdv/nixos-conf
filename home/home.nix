@@ -25,6 +25,7 @@
 		libnotify
 
 		zen-browser
+		telegram-desktop
 	];
 
 	home.pointerCursor = {
