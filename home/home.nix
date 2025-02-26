@@ -27,6 +27,11 @@
 		zen-browser
 	];
 
+	home.pointerCursor = {
+		name = "Bibata-Modern-Ice";
+		package = pkgs.bibata-cursors;
+	};
+
 	home = {
 		username = "rafail";
 		homeDirectory = "/home/rafail";
