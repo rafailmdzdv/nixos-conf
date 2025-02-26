@@ -51,6 +51,8 @@
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
+  programs.fish.enable = true;
+  users.defaultUserShell = pkgs.fish;
   users.users.rafail = {
     isNormalUser = true;
     description = "rafail";
@@ -69,37 +71,8 @@
 	# Editors
 	neovim
 
-	# Terminal emulators
-	alacritty
-	kitty
-
 	wget
 	curl
-
-	# Terminal utils
-	fzf
-	fish
-	fastfetch
-	yadm
-	tmux
-	btop
-	eza
-
-	waybar
-	rofi
-	swaylock-fancy
-	dunst
-
-	# WM
-	niri
-	xwayland
-
-	# Fonts
-	nerd-fonts.jetbrains-mono
-	font-awesome
-	noto-fonts-emoji
-
-	inputs.zen-browser.packages."${system}".default
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

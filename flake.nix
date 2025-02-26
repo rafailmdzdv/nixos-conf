@@ -28,7 +28,7 @@
 
 		homeConfigurations.rafail = home-manager.lib.homeManagerConfiguration {
 			pkgs = nixpkgs.legacyPackages."${system}";
-			modules = [ ./home.nix ];
+			modules = [ ./home/home.nix ];
 			extraSpecialArgs = {
 				inherit inputs;
 			};
