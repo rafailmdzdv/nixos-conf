@@ -24,6 +24,7 @@
     swww
     libnotify
     playerctl
+    yazi
 
     flakes.zen-browser
     telegram-desktop
