@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, ... }:
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -66,13 +66,14 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-	home-manager
+    home-manager
 
-	# Editors
-	neovim
+    # Editors
+    neovim
 
-	wget
-	curl
+    wget
+    curl
+    gcc
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -102,5 +103,4 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   nix.settings.experimental-features = ["flakes" "nix-command"];
   system.stateVersion = "24.11"; # Did you read the comment?
-
 }
