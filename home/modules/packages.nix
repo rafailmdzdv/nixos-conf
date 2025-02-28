@@ -35,5 +35,13 @@
     python312Full
     rustup
     rustc
+
+    # LSP
+    pyright
+    lua-language-server
+    typescript-language-server
+    nixd
+    stylua
+    tailwindcss-language-server
   ];
 }
