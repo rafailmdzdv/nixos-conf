@@ -16,6 +16,10 @@
     cava
     ripgrep
     wl-clipboard-x11
+    zip
+    unzip
+    playerctl
+    yazi
 
     waybar
     rofi
@@ -23,8 +27,6 @@
     swaynotificationcenter
     swww
     libnotify
-    playerctl
-    yazi
 
     flakes.zen-browser
     telegram-desktop

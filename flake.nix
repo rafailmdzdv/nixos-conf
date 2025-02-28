@@ -39,7 +39,7 @@
       pkgs = nixpkgs.legacyPackages."${system}";
       modules = [
           ./home/home.nix
-        ];
+      ];
       extraSpecialArgs = {
         inherit inputs;
         flakes = {
